@@ -8,8 +8,26 @@
 import SwiftUI
 
 struct MovieListView: View {
+    @ObservedObject var viewModel = MovieViewModel()
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            Group {
+                if viewModel.isLoading {
+                    ProgressView("Loading...")
+                } else if let errorMessage = viewModel.errorMessage {
+                    Text("Error :\(errorMessage)")
+                } else {
+                    List(viewModel.movies) { movie in
+                        MovieRowView(movie: movie)
+                    }.listStyle(PlainListStyle())
+                }
+            }
+            .onAppear {
+                viewModel.fetchMovies()
+            }
+            .navigationTitle("Movies")
+        }
     }
 }
 
