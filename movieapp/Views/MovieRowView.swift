@@ -12,8 +12,8 @@ struct MovieRowView: View {
     
     var body: some View {
         HStack {
-            if movie.urlToImage != nil {
-                AsyncImage(url: URL(string: movie.urlToImage!)) { phase in
+            if (movie.strBadge != nil) {
+                AsyncImage(url: URL(string: movie.strBadge!)) { phase in
                     switch phase {
                     case .empty:
                         ProgressView().frame(width: 70, height: 70)
@@ -32,17 +32,17 @@ struct MovieRowView: View {
                     }
                 }
             }
-    
             
             VStack(alignment: .leading, spacing: 4) {
-                Text(movie.title)
-                    .font(.headline)
-                if movie.description != nil {
-                    Text(movie.description!)
-                        .font(.subheadline)
-                        .lineLimit(1)
+                if (movie.strTeam != nil) {
+                    Text(movie.strTeam!)
+                        .font(.headline)
                 }
-                Text("\(movie.author)").font(.caption)
+               
+                if (movie.strLocation != nil) {
+                    Text(movie.strLocation!)
+                        .font(.caption)
+                }
             }
             .padding(.leading, 8)
         }
@@ -51,6 +51,6 @@ struct MovieRowView: View {
 
 struct MovieRowView_Previews: PreviewProvider {
     static var previews: some View {
-        MovieRowView(movie: Article(author: "JK Rowling", title: "Inside Out 2", description: "Teenager Riley's mind headquarters is undergoing a sudden demolition to make room for something entirely unexpected: new Emotions! Joy, Sadness, Anger, Fear and Disgust, who’ve long been running a successful operation by all accounts, aren’t sure how to feel when Anxiety shows up. And it looks like she’s not alone.", url: "2024-07-24T07:32:00Z", urlToImage: "/vpnVM9B6NMmQpWeZvzLvDESb2QY.jpg", publishedAt: "https://news.google.com/rss/articles/CBMifWh0dHBzOi8vd3d3LnJldXRlcnMuY29tL3dvcmxkL2FzaWEtcGFjaWZpYy9zYXVyeWEtYWlybGluZXMtcGxhbmUtY3Jhc2hlcy1kdXJpbmctdGFrZW9mZi1uZXBhbC1rYXRobWFuZHUtcG9zdC1zYXlzLTIwMjQtMDctMjQv0gEA?oc=5"))
+        MovieRowView(movie: Article(idTeam: "0", strTeam: nil, intFormedYear: nil, strLeague: nil, strStadium: nil, strDescriptionEn: nil, strBadge: nil, strCountry: nil, strLocation: nil))
     }
 }

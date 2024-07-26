@@ -9,18 +9,13 @@ import Foundation
 
 struct Article: Identifiable, Codable {
     let id: UUID = UUID()
-    let author: String
-    let title: String
-    let description: String?
-    let url: String
-    let urlToImage: String?
-    let publishedAt: String
-   
-
+    let idTeam: String
+    let strTeam, intFormedYear, strLeague, strStadium, strDescriptionEn: String?
+    let strBadge, strCountry, strLocation: String?
+    
     enum CodingKeys: String, CodingKey {
-        case author, title, url
-        case description = "description"
-        case urlToImage = "urlToImage"
-        case publishedAt
+        case idTeam
+        case strTeam, intFormedYear, strLeague, strStadium, strDescriptionEn
+        case strBadge, strCountry, strLocation
     }
 }

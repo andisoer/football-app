@@ -19,7 +19,7 @@ class MovieViewModel: ObservableObject {
         self.isLoading = true
         self.errorMessage = nil
         
-        movieService.fetchMovies { [weak self] result in
+        movieService.fetchFootbalTeams { [weak self] result in
             DispatchQueue.main.async {
                 self?.isLoading = false
                 
@@ -27,6 +27,7 @@ class MovieViewModel: ObservableObject {
                 case .success(let movies):
                     self?.movies = movies
                 case .failure(let error):
+                    print(error as Any)
                     self?.errorMessage = error.localizedDescription
                 }
             }

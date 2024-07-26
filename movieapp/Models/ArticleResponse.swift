@@ -8,5 +8,9 @@
 import Foundation
 
 struct ArticleResponse: Codable {
-    let articles: [Article]
+    let teams: [Article]
+    
+    enum CodingKeys: String, CodingKey {
+        case teams
+    }
 }
