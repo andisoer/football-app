@@ -9,19 +9,18 @@ import Foundation
 import Alamofire
 
 class MovieService {
-    func fetchMovies(completion: @escaping (Result<[Movie], Error>) -> Void) {
-        let url = "https://api.themoviedb.org/3/movie/now_playing?language=en-US&page=1"
+    func fetchMovies(completion: @escaping (Result<[Article], Error>) -> Void) {
+        let url = "https://newsapi.org/v2/top-headlines?country=id&page=1"
         
         let headers: HTTPHeaders? = [
-            "Authorization": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJjZDQyMDFkZTNhNDhhOWVhZGJhN2U4MmJkNTc5MDM2YyIsIm5iZiI6MTcyMTg4NzU1My44ODAwMzcsInN1YiI6IjVkYzE3OTdiZjFiNTcxMDAxM2VhOTYzNiIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.3byEP4GsxLsuyPTkbPeaXeo1YZZ5yeWkLC8N0V6KX8U",
-            "accept": "application/json",
+            "Authorization": "c09201b8a9b14af89caf00dac49acf0a",
         ]
         
-        AF.request(url, method: .get, headers: headers).validate().responseDecodable(of: MovieResponse.self) {
+        AF.request(url, method: .get, headers: headers).validate().responseDecodable(of: ArticleResponse.self) {
             response in
             switch response.result {
             case .success(let movieResponse):
-                completion(.success(movieResponse.results))
+                completion(.success(movieResponse.articles))
             case .failure(let error):
                 completion(.failure(error))
             }

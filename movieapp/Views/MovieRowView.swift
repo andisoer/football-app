@@ -8,26 +8,28 @@
 import SwiftUI
 
 struct MovieRowView: View {
-    let movie: Movie
+    let movie: Article
     
     var body: some View {
         HStack {
-            AsyncImage(url: URL(string: "https://image.tmdb.org/t/p/w500/\(movie.posterPath)")) { phase in
-                switch phase {
-                case .empty:
-                    ProgressView().frame(width: 70, height: 70)
-                case .success(let image):
-                    image.resizable()
-                        .aspectRatio(contentMode: .fill)
-                        .frame(width: 70, height: 70)
-                        .cornerRadius(8)
-                case .failure: Image(systemName: "photo")
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .frame(width: 70, height: 70)
-                        .cornerRadius(8)
-                @unknown default:
-                    EmptyView()
+            if movie.urlToImage != nil {
+                AsyncImage(url: URL(string: movie.urlToImage!)) { phase in
+                    switch phase {
+                    case .empty:
+                        ProgressView().frame(width: 70, height: 70)
+                    case .success(let image):
+                        image.resizable()
+                            .aspectRatio(contentMode: .fill)
+                            .frame(width: 70, height: 70)
+                            .cornerRadius(8)
+                    case .failure: Image(systemName: "photo")
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(width: 70, height: 70)
+                            .cornerRadius(8)
+                    @unknown default:
+                        EmptyView()
+                    }
                 }
             }
     
@@ -35,10 +37,12 @@ struct MovieRowView: View {
             VStack(alignment: .leading, spacing: 4) {
                 Text(movie.title)
                     .font(.headline)
-                Text(movie.overview)
-                    .font(.subheadline)
-                    .lineLimit(1)
-                Text("Rating: \(movie.voteAverage, specifier: "%.1f")").font(.caption)
+                if movie.description != nil {
+                    Text(movie.description!)
+                        .font(.subheadline)
+                        .lineLimit(1)
+                }
+                Text("\(movie.author)").font(.caption)
             }
             .padding(.leading, 8)
         }
@@ -47,6 +51,6 @@ struct MovieRowView: View {
 
 struct MovieRowView_Previews: PreviewProvider {
     static var previews: some View {
-        MovieRowView(movie: Movie(id: 1022789, title: "Inside Out 2", overview: "Teenager Riley's mind headquarters is undergoing a sudden demolition to make room for something entirely unexpected: new Emotions! Joy, Sadness, Anger, Fear and Disgust, who’ve long been running a successful operation by all accounts, aren’t sure how to feel when Anxiety shows up. And it looks like she’s not alone.", voteAverage: 7.6, posterPath: "/vpnVM9B6NMmQpWeZvzLvDESb2QY.jpg"))
+        MovieRowView(movie: Article(author: "JK Rowling", title: "Inside Out 2", description: "Teenager Riley's mind headquarters is undergoing a sudden demolition to make room for something entirely unexpected: new Emotions! Joy, Sadness, Anger, Fear and Disgust, who’ve long been running a successful operation by all accounts, aren’t sure how to feel when Anxiety shows up. And it looks like she’s not alone.", url: "2024-07-24T07:32:00Z", urlToImage: "/vpnVM9B6NMmQpWeZvzLvDESb2QY.jpg", publishedAt: "https://news.google.com/rss/articles/CBMifWh0dHBzOi8vd3d3LnJldXRlcnMuY29tL3dvcmxkL2FzaWEtcGFjaWZpYy9zYXVyeWEtYWlybGluZXMtcGxhbmUtY3Jhc2hlcy1kdXJpbmctdGFrZW9mZi1uZXBhbC1rYXRobWFuZHUtcG9zdC1zYXlzLTIwMjQtMDctMjQv0gEA?oc=5"))
     }
 }

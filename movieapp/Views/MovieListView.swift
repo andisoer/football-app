@@ -26,7 +26,7 @@ struct MovieListView: View {
             .onAppear {
                 viewModel.fetchMovies()
             }
-            .navigationTitle("Movies")
+            .navigationTitle("Breaking News")
         }
     }
 }

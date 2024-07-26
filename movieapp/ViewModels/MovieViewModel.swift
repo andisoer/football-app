@@ -9,7 +9,7 @@ import Foundation
 import SwiftUI
 
 class MovieViewModel: ObservableObject {
-    @Published var movies: [Movie] = []
+    @Published var movies: [Article] = []
     @Published var isLoading = false
     @Published var errorMessage: String?
     
