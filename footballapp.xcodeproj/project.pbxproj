@@ -20,7 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		CE95CE5C2C511B7A00DECE83 /* movieapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = movieapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE95CE5C2C511B7A00DECE83 /* footballapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = footballapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE95CE5F2C511B7A00DECE83 /* footballteamApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = footballteamApp.swift; sourceTree = "<group>"; };
 		CE95CE632C511B7F00DECE83 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE95CE662C511B7F00DECE83 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -47,7 +47,7 @@
 		CE95CE532C511B7A00DECE83 = {
 			isa = PBXGroup;
 			children = (
-				CE95CE5E2C511B7A00DECE83 /* movieapp */,
+				CE95CE5E2C511B7A00DECE83 /* footballapp */,
 				CE95CE5D2C511B7A00DECE83 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -55,12 +55,12 @@
 		CE95CE5D2C511B7A00DECE83 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CE95CE5C2C511B7A00DECE83 /* movieapp.app */,
+				CE95CE5C2C511B7A00DECE83 /* footballapp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		CE95CE5E2C511B7A00DECE83 /* movieapp */ = {
+		CE95CE5E2C511B7A00DECE83 /* footballapp */ = {
 			isa = PBXGroup;
 			children = (
 				CEC50DE82C520FF7006AAEAD /* Services */,
@@ -71,7 +71,7 @@
 				CE95CE632C511B7F00DECE83 /* Assets.xcassets */,
 				CE95CE652C511B7F00DECE83 /* Preview Content */,
 			);
-			path = movieapp;
+			path = footballapp;
 			sourceTree = "<group>";
 		};
 		CE95CE652C511B7F00DECE83 /* Preview Content */ = {
@@ -119,9 +119,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		CE95CE5B2C511B7A00DECE83 /* movieapp */ = {
+		CE95CE5B2C511B7A00DECE83 /* footballapp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CE95CE6A2C511B7F00DECE83 /* Build configuration list for PBXNativeTarget "movieapp" */;
+			buildConfigurationList = CE95CE6A2C511B7F00DECE83 /* Build configuration list for PBXNativeTarget "footballapp" */;
 			buildPhases = (
 				CE95CE582C511B7A00DECE83 /* Sources */,
 				CE95CE592C511B7A00DECE83 /* Frameworks */,
@@ -131,12 +131,12 @@
 			);
 			dependencies = (
 			);
-			name = movieapp;
+			name = footballapp;
 			packageProductDependencies = (
 				CEC50DEE2C523392006AAEAD /* Alamofire */,
 			);
 			productName = movieapp;
-			productReference = CE95CE5C2C511B7A00DECE83 /* movieapp.app */;
+			productReference = CE95CE5C2C511B7A00DECE83 /* footballapp.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -154,7 +154,7 @@
 					};
 				};
 			};
-			buildConfigurationList = CE95CE572C511B7A00DECE83 /* Build configuration list for PBXProject "movieapp" */;
+			buildConfigurationList = CE95CE572C511B7A00DECE83 /* Build configuration list for PBXProject "footballapp" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -170,7 +170,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CE95CE5B2C511B7A00DECE83 /* movieapp */,
+				CE95CE5B2C511B7A00DECE83 /* footballapp */,
 			);
 		};
 /* End PBXProject section */
@@ -331,7 +331,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"movieapp/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"footballapp/Preview Content\"";
 				DEVELOPMENT_TEAM = Y7PBF5QJ6N;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -364,7 +364,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"movieapp/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"footballapp/Preview Content\"";
 				DEVELOPMENT_TEAM = Y7PBF5QJ6N;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -393,7 +393,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		CE95CE572C511B7A00DECE83 /* Build configuration list for PBXProject "movieapp" */ = {
+		CE95CE572C511B7A00DECE83 /* Build configuration list for PBXProject "footballapp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CE95CE682C511B7F00DECE83 /* Debug */,
@@ -402,7 +402,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CE95CE6A2C511B7F00DECE83 /* Build configuration list for PBXNativeTarget "movieapp" */ = {
+		CE95CE6A2C511B7F00DECE83 /* Build configuration list for PBXNativeTarget "footballapp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CE95CE6B2C511B7F00DECE83 /* Debug */,

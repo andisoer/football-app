@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "CE95CE5B2C511B7A00DECE83"
-               BuildableName = "movieapp.app"
-               BlueprintName = "movieapp"
-               ReferencedContainer = "container:movieapp.xcodeproj">
+               BuildableName = "footballapp.app"
+               BlueprintName = "footballapp"
+               ReferencedContainer = "container:footballapp.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -44,9 +44,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "CE95CE5B2C511B7A00DECE83"
-            BuildableName = "movieapp.app"
-            BlueprintName = "movieapp"
-            ReferencedContainer = "container:movieapp.xcodeproj">
+            BuildableName = "footballapp.app"
+            BlueprintName = "footballapp"
+            ReferencedContainer = "container:footballapp.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -61,9 +61,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "CE95CE5B2C511B7A00DECE83"
-            BuildableName = "movieapp.app"
-            BlueprintName = "movieapp"
-            ReferencedContainer = "container:movieapp.xcodeproj">
+            BuildableName = "footballapp.app"
+            BlueprintName = "footballapp"
+            ReferencedContainer = "container:footballapp.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
