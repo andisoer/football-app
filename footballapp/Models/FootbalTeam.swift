@@ -8,14 +8,14 @@
 import Foundation
 
 struct FootbalTeam: Identifiable, Codable {
-    let id: UUID = UUID()
+    let id: UUID = .init()
     let idTeam: String
-    let strTeam, intFormedYear, strLeague, strStadium, strDescriptionEn: String?
+    let strTeam, intFormedYear, strLeague, strStadium, strDescriptionEN: String?
     let strBadge, strCountry, strLocation: String?
-    
+
     enum CodingKeys: String, CodingKey {
         case idTeam
-        case strTeam, intFormedYear, strLeague, strStadium, strDescriptionEn
+        case strTeam, intFormedYear, strLeague, strStadium, strDescriptionEN
         case strBadge, strCountry, strLocation
     }
 }

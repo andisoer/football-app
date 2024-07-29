@@ -17,6 +17,7 @@
 		CEC50DEC2C522760006AAEAD /* FootbalTeamRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC50DEB2C522760006AAEAD /* FootbalTeamRowView.swift */; };
 		CEC50DEF2C523392006AAEAD /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = CEC50DEE2C523392006AAEAD /* Alamofire */; };
 		CEC50DF32C525024006AAEAD /* FootbalTeamResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC50DF22C525024006AAEAD /* FootbalTeamResponse.swift */; };
+		CEF4ABFF2C57533200D9AB84 /* FootballTeamDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF4ABFE2C57533200D9AB84 /* FootballTeamDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		CEC50DE92C521006006AAEAD /* FootballTeamService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootballTeamService.swift; sourceTree = "<group>"; };
 		CEC50DEB2C522760006AAEAD /* FootbalTeamRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootbalTeamRowView.swift; sourceTree = "<group>"; };
 		CEC50DF22C525024006AAEAD /* FootbalTeamResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootbalTeamResponse.swift; sourceTree = "<group>"; };
+		CEF4ABFE2C57533200D9AB84 /* FootballTeamDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootballTeamDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 			children = (
 				CEC50DE32C520F81006AAEAD /* FootbalTeamListView.swift */,
 				CEC50DEB2C522760006AAEAD /* FootbalTeamRowView.swift */,
+				CEF4ABFE2C57533200D9AB84 /* FootballTeamDetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -199,6 +202,7 @@
 				CEC50DE72C520FAC006AAEAD /* FootballTeamViewModel.swift in Sources */,
 				CEC50DEC2C522760006AAEAD /* FootbalTeamRowView.swift in Sources */,
 				CEC50DEA2C521006006AAEAD /* FootballTeamService.swift in Sources */,
+				CEF4ABFF2C57533200D9AB84 /* FootballTeamDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
