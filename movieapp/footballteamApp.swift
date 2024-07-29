@@ -8,10 +8,10 @@
 import SwiftUI
 
 @main
-struct movieappApp: App {
+struct footballteamApp: App {
     var body: some Scene {
         WindowGroup {
-            MovieListView()
+            FootbalTeamListView()
         }
     }
 }

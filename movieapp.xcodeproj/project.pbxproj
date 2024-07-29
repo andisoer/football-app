@@ -7,29 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CE95CE602C511B7A00DECE83 /* movieappApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE95CE5F2C511B7A00DECE83 /* movieappApp.swift */; };
+		CE95CE602C511B7A00DECE83 /* footballteamApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE95CE5F2C511B7A00DECE83 /* footballteamApp.swift */; };
 		CE95CE642C511B7F00DECE83 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE95CE632C511B7F00DECE83 /* Assets.xcassets */; };
 		CE95CE672C511B7F00DECE83 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE95CE662C511B7F00DECE83 /* Preview Assets.xcassets */; };
-		CEC50DE22C520E8B006AAEAD /* Article.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC50DE12C520E8B006AAEAD /* Article.swift */; };
-		CEC50DE42C520F81006AAEAD /* MovieListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC50DE32C520F81006AAEAD /* MovieListView.swift */; };
-		CEC50DE72C520FAC006AAEAD /* MovieViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC50DE62C520FAC006AAEAD /* MovieViewModel.swift */; };
-		CEC50DEA2C521006006AAEAD /* MovieService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC50DE92C521006006AAEAD /* MovieService.swift */; };
-		CEC50DEC2C522760006AAEAD /* MovieRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC50DEB2C522760006AAEAD /* MovieRowView.swift */; };
+		CEC50DE22C520E8B006AAEAD /* FootbalTeam.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC50DE12C520E8B006AAEAD /* FootbalTeam.swift */; };
+		CEC50DE42C520F81006AAEAD /* FootbalTeamListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC50DE32C520F81006AAEAD /* FootbalTeamListView.swift */; };
+		CEC50DE72C520FAC006AAEAD /* FootballTeamViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC50DE62C520FAC006AAEAD /* FootballTeamViewModel.swift */; };
+		CEC50DEA2C521006006AAEAD /* FootballTeamService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC50DE92C521006006AAEAD /* FootballTeamService.swift */; };
+		CEC50DEC2C522760006AAEAD /* FootbalTeamRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC50DEB2C522760006AAEAD /* FootbalTeamRowView.swift */; };
 		CEC50DEF2C523392006AAEAD /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = CEC50DEE2C523392006AAEAD /* Alamofire */; };
-		CEC50DF32C525024006AAEAD /* ArticleResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC50DF22C525024006AAEAD /* ArticleResponse.swift */; };
+		CEC50DF32C525024006AAEAD /* FootbalTeamResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC50DF22C525024006AAEAD /* FootbalTeamResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CE95CE5C2C511B7A00DECE83 /* movieapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = movieapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		CE95CE5F2C511B7A00DECE83 /* movieappApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = movieappApp.swift; sourceTree = "<group>"; };
+		CE95CE5F2C511B7A00DECE83 /* footballteamApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = footballteamApp.swift; sourceTree = "<group>"; };
 		CE95CE632C511B7F00DECE83 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE95CE662C511B7F00DECE83 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		CEC50DE12C520E8B006AAEAD /* Article.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Article.swift; sourceTree = "<group>"; };
-		CEC50DE32C520F81006AAEAD /* MovieListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListView.swift; sourceTree = "<group>"; };
-		CEC50DE62C520FAC006AAEAD /* MovieViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieViewModel.swift; sourceTree = "<group>"; };
-		CEC50DE92C521006006AAEAD /* MovieService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieService.swift; sourceTree = "<group>"; };
-		CEC50DEB2C522760006AAEAD /* MovieRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieRowView.swift; sourceTree = "<group>"; };
-		CEC50DF22C525024006AAEAD /* ArticleResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleResponse.swift; sourceTree = "<group>"; };
+		CEC50DE12C520E8B006AAEAD /* FootbalTeam.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootbalTeam.swift; sourceTree = "<group>"; };
+		CEC50DE32C520F81006AAEAD /* FootbalTeamListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootbalTeamListView.swift; sourceTree = "<group>"; };
+		CEC50DE62C520FAC006AAEAD /* FootballTeamViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootballTeamViewModel.swift; sourceTree = "<group>"; };
+		CEC50DE92C521006006AAEAD /* FootballTeamService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootballTeamService.swift; sourceTree = "<group>"; };
+		CEC50DEB2C522760006AAEAD /* FootbalTeamRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootbalTeamRowView.swift; sourceTree = "<group>"; };
+		CEC50DF22C525024006AAEAD /* FootbalTeamResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootbalTeamResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,7 +67,7 @@
 				CEC50DE52C520F99006AAEAD /* ViewModels */,
 				CEC50DE02C520E5E006AAEAD /* Models */,
 				CEC50DDF2C520DFB006AAEAD /* Views */,
-				CE95CE5F2C511B7A00DECE83 /* movieappApp.swift */,
+				CE95CE5F2C511B7A00DECE83 /* footballteamApp.swift */,
 				CE95CE632C511B7F00DECE83 /* Assets.xcassets */,
 				CE95CE652C511B7F00DECE83 /* Preview Content */,
 			);
@@ -85,8 +85,8 @@
 		CEC50DDF2C520DFB006AAEAD /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				CEC50DE32C520F81006AAEAD /* MovieListView.swift */,
-				CEC50DEB2C522760006AAEAD /* MovieRowView.swift */,
+				CEC50DE32C520F81006AAEAD /* FootbalTeamListView.swift */,
+				CEC50DEB2C522760006AAEAD /* FootbalTeamRowView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -94,8 +94,8 @@
 		CEC50DE02C520E5E006AAEAD /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				CEC50DE12C520E8B006AAEAD /* Article.swift */,
-				CEC50DF22C525024006AAEAD /* ArticleResponse.swift */,
+				CEC50DE12C520E8B006AAEAD /* FootbalTeam.swift */,
+				CEC50DF22C525024006AAEAD /* FootbalTeamResponse.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -103,7 +103,7 @@
 		CEC50DE52C520F99006AAEAD /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				CEC50DE62C520FAC006AAEAD /* MovieViewModel.swift */,
+				CEC50DE62C520FAC006AAEAD /* FootballTeamViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -111,7 +111,7 @@
 		CEC50DE82C520FF7006AAEAD /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				CEC50DE92C521006006AAEAD /* MovieService.swift */,
+				CEC50DE92C521006006AAEAD /* FootballTeamService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -192,13 +192,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CEC50DF32C525024006AAEAD /* ArticleResponse.swift in Sources */,
-				CEC50DE22C520E8B006AAEAD /* Article.swift in Sources */,
-				CE95CE602C511B7A00DECE83 /* movieappApp.swift in Sources */,
-				CEC50DE42C520F81006AAEAD /* MovieListView.swift in Sources */,
-				CEC50DE72C520FAC006AAEAD /* MovieViewModel.swift in Sources */,
-				CEC50DEC2C522760006AAEAD /* MovieRowView.swift in Sources */,
-				CEC50DEA2C521006006AAEAD /* MovieService.swift in Sources */,
+				CEC50DF32C525024006AAEAD /* FootbalTeamResponse.swift in Sources */,
+				CEC50DE22C520E8B006AAEAD /* FootbalTeam.swift in Sources */,
+				CE95CE602C511B7A00DECE83 /* footballteamApp.swift in Sources */,
+				CEC50DE42C520F81006AAEAD /* FootbalTeamListView.swift in Sources */,
+				CEC50DE72C520FAC006AAEAD /* FootballTeamViewModel.swift in Sources */,
+				CEC50DEC2C522760006AAEAD /* FootbalTeamRowView.swift in Sources */,
+				CEC50DEA2C521006006AAEAD /* FootballTeamService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,7 +345,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = id.surya.movieapp;
+				PRODUCT_BUNDLE_IDENTIFIER = id.surya.footballteamapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -378,7 +378,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = id.surya.movieapp;
+				PRODUCT_BUNDLE_IDENTIFIER = id.surya.footballteamapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;

@@ -1,19 +1,19 @@
 //
-//  MovieRowView.swift
-//  movieapp
+//  FootbalTeamService.swift
+//  footballteamapp
 //
 //  Created by Andi Surya on 7/25/24.
 //
 
 import SwiftUI
 
-struct MovieRowView: View {
-    let movie: Article
-    
+struct FootbalTeamRowView: View {
+    let team: FootbalTeam
+
     var body: some View {
         HStack {
-            if (movie.strBadge != nil) {
-                AsyncImage(url: URL(string: movie.strBadge!)) { phase in
+            if team.strBadge != nil {
+                AsyncImage(url: URL(string: team.strBadge!)) { phase in
                     switch phase {
                     case .empty:
                         ProgressView().frame(width: 70, height: 70)
@@ -23,24 +23,24 @@ struct MovieRowView: View {
                             .frame(width: 70, height: 70)
                             .cornerRadius(8)
                     case .failure: Image(systemName: "photo")
-                            .resizable()
-                            .aspectRatio(contentMode: .fit)
-                            .frame(width: 70, height: 70)
-                            .cornerRadius(8)
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: 70, height: 70)
+                        .cornerRadius(8)
                     @unknown default:
                         EmptyView()
                     }
                 }
             }
-            
+
             VStack(alignment: .leading, spacing: 4) {
-                if (movie.strTeam != nil) {
-                    Text(movie.strTeam!)
+                if team.strTeam != nil {
+                    Text(team.strTeam!)
                         .font(.headline)
                 }
-               
-                if (movie.strLocation != nil) {
-                    Text(movie.strLocation!)
+
+                if team.strLocation != nil {
+                    Text(team.strLocation!)
                         .font(.caption)
                 }
             }
@@ -51,6 +51,6 @@ struct MovieRowView: View {
 
 struct MovieRowView_Previews: PreviewProvider {
     static var previews: some View {
-        MovieRowView(movie: Article(idTeam: "0", strTeam: nil, intFormedYear: nil, strLeague: nil, strStadium: nil, strDescriptionEn: nil, strBadge: nil, strCountry: nil, strLocation: nil))
+        FootbalTeamRowView(team: FootbalTeam(idTeam: "0", strTeam: nil, intFormedYear: nil, strLeague: nil, strStadium: nil, strDescriptionEn: nil, strBadge: nil, strCountry: nil, strLocation: nil))
     }
 }

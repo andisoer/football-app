@@ -1,15 +1,15 @@
 //
-//  MovieListView.swift
-//  movieapp
+//  FootbalTeamService.swift
+//  footballteamapp
 //
 //  Created by Andi Surya on 7/25/24.
 //
 
 import SwiftUI
 
-struct MovieListView: View {
-    @ObservedObject var viewModel = MovieViewModel()
-    
+struct FootbalTeamListView: View {
+    @ObservedObject var viewModel = FootballTeamViewModel()
+
     var body: some View {
         NavigationView {
             Group {
@@ -18,13 +18,13 @@ struct MovieListView: View {
                 } else if let errorMessage = viewModel.errorMessage {
                     Text("Error :\(errorMessage)")
                 } else {
-                    List(viewModel.movies) { movie in
-                        MovieRowView(movie: movie)
+                    List(viewModel.footballTeams) { team in
+                        FootbalTeamRowView(team: team)
                     }.listStyle(PlainListStyle())
                 }
             }
             .onAppear {
-                viewModel.fetchMovies()
+                viewModel.fetchFootballTeams()
             }
             .navigationTitle("Football Teams")
         }
@@ -32,5 +32,5 @@ struct MovieListView: View {
 }
 
 #Preview {
-    MovieListView()
+    FootbalTeamListView()
 }

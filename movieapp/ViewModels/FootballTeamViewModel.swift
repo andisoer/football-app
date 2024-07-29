@@ -1,6 +1,6 @@
 //
-//  MovieViewModel.swift
-//  movieapp
+//  FootbalTeamService.swift
+//  footballteamapp
 //
 //  Created by Andi Surya on 7/25/24.
 //
@@ -8,14 +8,14 @@
 import Foundation
 import SwiftUI
 
-class MovieViewModel: ObservableObject {
-    @Published var movies: [Article] = []
+class FootballTeamViewModel: ObservableObject {
+    @Published var footballTeams: [FootbalTeam] = []
     @Published var isLoading = false
     @Published var errorMessage: String?
     
-    private let movieService = MovieService()
+    private let movieService = FootballTeamService()
     
-    func fetchMovies() {
+    func fetchFootballTeams() {
         self.isLoading = true
         self.errorMessage = nil
         
@@ -24,8 +24,8 @@ class MovieViewModel: ObservableObject {
                 self?.isLoading = false
                 
                 switch result {
-                case .success(let movies):
-                    self?.movies = movies
+                case .success(let teams):
+                    self?.footballTeams = teams
                 case .failure(let error):
                     print(error as Any)
                     self?.errorMessage = error.localizedDescription
