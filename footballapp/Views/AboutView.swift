@@ -11,6 +11,14 @@ struct AboutView: View {
     var body: some View {
         ScrollView {
             VStack {
+                
+                Spacer().frame(height: 24)
+                
+                Image("ProfilePicture")
+                    .clipShape(Circle())
+                
+                Spacer().frame(height: 16)
+                
                 Text("Football App")
                     .font(.title)
 
