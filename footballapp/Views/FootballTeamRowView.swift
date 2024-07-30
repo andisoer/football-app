@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct FootbalTeamRowView: View {
+struct FootballTeamRowView: View {
     let team: FootbalTeam
 
     var body: some View {
@@ -52,5 +52,5 @@ struct FootbalTeamRowView: View {
 }
 
 #Preview {
-    FootbalTeamRowView(team: FootbalTeam(idTeam: "0", strTeam: nil, intFormedYear: nil, strLeague: nil, strStadium: nil, strDescriptionEN: nil, strBadge: nil, strCountry: nil, strLocation: nil))
+    FootballTeamRowView(team: FootbalTeam(idTeam: "0", strTeam: nil, intFormedYear: nil, strLeague: nil, strStadium: nil, strDescriptionEN: nil, strBadge: nil, strCountry: nil, strLocation: nil))
 }

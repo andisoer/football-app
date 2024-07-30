@@ -19,7 +19,7 @@ struct FootbalTeamListView: View {
                     Text("Error :\(errorMessage)")
                 } else {
                     List(viewModel.footballTeams) { team in
-                        FootbalTeamRowView(team: team)
+                        FootballTeamRowView(team: team)
                     }.listStyle(PlainListStyle())
                 }
             }
@@ -27,6 +27,15 @@ struct FootbalTeamListView: View {
                 viewModel.fetchFootballTeams()
             }
             .navigationTitle("Football Teams")
+            .toolbar {
+                ToolbarItem(placement: .topBarTrailing) {
+                    Button(action: {}) {
+                        NavigationLink(destination: AboutView()) {
+                            Image(systemName: "info.circle")
+                        }
+                    }
+                }
+            }
         }
     }
 }

@@ -14,9 +14,10 @@
 		CEC50DE42C520F81006AAEAD /* FootbalTeamListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC50DE32C520F81006AAEAD /* FootbalTeamListView.swift */; };
 		CEC50DE72C520FAC006AAEAD /* FootballTeamViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC50DE62C520FAC006AAEAD /* FootballTeamViewModel.swift */; };
 		CEC50DEA2C521006006AAEAD /* FootballTeamService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC50DE92C521006006AAEAD /* FootballTeamService.swift */; };
-		CEC50DEC2C522760006AAEAD /* FootbalTeamRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC50DEB2C522760006AAEAD /* FootbalTeamRowView.swift */; };
+		CEC50DEC2C522760006AAEAD /* FootballTeamRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC50DEB2C522760006AAEAD /* FootballTeamRowView.swift */; };
 		CEC50DEF2C523392006AAEAD /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = CEC50DEE2C523392006AAEAD /* Alamofire */; };
 		CEC50DF32C525024006AAEAD /* FootbalTeamResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC50DF22C525024006AAEAD /* FootbalTeamResponse.swift */; };
+		CECACAC32C588F7500A0FE55 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECACAC22C588F7500A0FE55 /* AboutView.swift */; };
 		CEF4ABFF2C57533200D9AB84 /* FootballTeamDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEF4ABFE2C57533200D9AB84 /* FootballTeamDetailView.swift */; };
 /* End PBXBuildFile section */
 
@@ -29,8 +30,9 @@
 		CEC50DE32C520F81006AAEAD /* FootbalTeamListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootbalTeamListView.swift; sourceTree = "<group>"; };
 		CEC50DE62C520FAC006AAEAD /* FootballTeamViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootballTeamViewModel.swift; sourceTree = "<group>"; };
 		CEC50DE92C521006006AAEAD /* FootballTeamService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootballTeamService.swift; sourceTree = "<group>"; };
-		CEC50DEB2C522760006AAEAD /* FootbalTeamRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootbalTeamRowView.swift; sourceTree = "<group>"; };
+		CEC50DEB2C522760006AAEAD /* FootballTeamRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootballTeamRowView.swift; sourceTree = "<group>"; };
 		CEC50DF22C525024006AAEAD /* FootbalTeamResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootbalTeamResponse.swift; sourceTree = "<group>"; };
+		CECACAC22C588F7500A0FE55 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
 		CEF4ABFE2C57533200D9AB84 /* FootballTeamDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootballTeamDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -88,8 +90,9 @@
 			isa = PBXGroup;
 			children = (
 				CEC50DE32C520F81006AAEAD /* FootbalTeamListView.swift */,
-				CEC50DEB2C522760006AAEAD /* FootbalTeamRowView.swift */,
+				CEC50DEB2C522760006AAEAD /* FootballTeamRowView.swift */,
 				CEF4ABFE2C57533200D9AB84 /* FootballTeamDetailView.swift */,
+				CECACAC22C588F7500A0FE55 /* AboutView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -199,8 +202,9 @@
 				CEC50DE22C520E8B006AAEAD /* FootbalTeam.swift in Sources */,
 				CE95CE602C511B7A00DECE83 /* footballteamApp.swift in Sources */,
 				CEC50DE42C520F81006AAEAD /* FootbalTeamListView.swift in Sources */,
+				CECACAC32C588F7500A0FE55 /* AboutView.swift in Sources */,
 				CEC50DE72C520FAC006AAEAD /* FootballTeamViewModel.swift in Sources */,
-				CEC50DEC2C522760006AAEAD /* FootbalTeamRowView.swift in Sources */,
+				CEC50DEC2C522760006AAEAD /* FootballTeamRowView.swift in Sources */,
 				CEC50DEA2C521006006AAEAD /* FootballTeamService.swift in Sources */,
 				CEF4ABFF2C57533200D9AB84 /* FootballTeamDetailView.swift in Sources */,
 			);

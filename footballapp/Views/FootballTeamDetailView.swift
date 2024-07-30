@@ -35,7 +35,6 @@ struct FootballTeamDetailView: View {
                             EmptyView()
                         }
                     }
-
                     .padding(.trailing, 8)
                     .frame(alignment: .leading)
 
@@ -72,7 +71,7 @@ struct FootballTeamDetailView: View {
                     Text("Homebase").font(.headline).frame(maxWidth: .infinity, alignment: .leading)
 
                     Spacer().frame(height: 8)
-                    
+
                     Text(team.strStadium!)
                         .font(.caption)
                         .frame(maxWidth: .infinity, alignment: .leading)
